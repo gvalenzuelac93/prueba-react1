@@ -6,3 +6,11 @@
 .filterable-header:hover {
   background-color: #d9d9d9; 
 }
+.text-start {
+  background-repeat:no-repeat;
+  background-size:100px 70px;
+  background-position: right;  
+  width: 200px; 
+  height: 70px;
+
+}

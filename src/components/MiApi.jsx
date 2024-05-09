@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Tabla from './Tabla';
-import Buscador from './Buscador';
+import Header from "./Header";
 
 function MiApi() {
   const [countries, setCountries] = useState([]);
@@ -27,8 +27,10 @@ function MiApi() {
 
   return (
     <div>
-      <Buscador countries={countries} setFilteredCountries={handleFilteredCountries} />
+      <Header countries={countries} setFilteredCountries={handleFilteredCountries}/>
+      <div id="contenido">
       <Tabla countries={filteredCountries} />
+      </div>
       </div>
   );
 }

@@ -6,7 +6,6 @@ function App(){
     
     return(
         <div className="App">
-      <h1>Tabla de Clasificación</h1>
       <MiApi />
       </div>
     )

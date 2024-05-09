@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import Table from 'react-bootstrap/Table';
 import './Tabla.css'; // Importar el archivo de estilos CSS personalizados
 
-const Argentina = "./flags/Argentina.png"
-
-
 function Tabla({ countries }) {
   const [sortedCountries, setSortedCountries] = useState([]);
   const [sortKey, setSortKey] = useState(null);
   const [sortDirection, setSortDirection] = useState(1); // 1 para ascender, -1 para descender
+
 
   useEffect(() => {
     setSortedCountries(countries);
@@ -44,7 +42,7 @@ function Tabla({ countries }) {
   };
   return (
     <div>
-      <Table bordered hover>
+      <Table bordered >
         <thead>
           <tr>
             <th onClick={() => handleSort('position')} className="filterable-header">País</th>
@@ -59,13 +57,13 @@ function Tabla({ countries }) {
         <tbody>
           {sortedCountries.map((data, index) => (
             <tr key={index} className={data.position < 7 ? 'table-warning' : data.position === 7 ? 'table-primary' : (data.position >= 8 && data.position <= 10) ? '' : 'table-primary'}>
-              <td className="text-start"><img src={`..assets/flags/${data.country}.svg`} alt={data.country} /> {data.position} {data.country}</td>
-              <td>{data.matches_played}</td>
-              <td>{data.won}</td>
-              <td>{data.tied}</td>
-              <td>{data.losses}</td>
-              <td>{data.goal_difference}</td>
-              <td>{data.points}</td>
+              <td id="iconos" className="text-start" style={{ backgroundImage: `url('src/assets/flags/${data.country}.svg')` }}> {data.position} {data.country}</td>
+              <td className="text-center align-middle">{data.matches_played}</td>
+              <td className="text-center align-middle">{data.won}</td>
+              <td className="text-center align-middle">{data.tied}</td>
+              <td className="text-center align-middle">{data.losses}</td>
+              <td className="text-center align-middle">{data.goal_difference}</td>
+              <td className="text-center align-middle">{data.points}</td>
             </tr>
           ))}
         </tbody>
