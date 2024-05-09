@@ -59,7 +59,7 @@ function Tabla({ countries }) {
         <tbody>
           {sortedCountries.map((data, index) => (
             <tr key={index} className={data.position < 7 ? 'table-warning' : data.position === 7 ? 'table-primary' : (data.position >= 8 && data.position <= 10) ? '' : 'table-primary'}>
-              <td className="text-start"><img src={`./flags/${data.country}.svg`} alt={data.country} /> {data.position} {data.country}</td>
+              <td className="text-start"><img src={`..assets/flags/${data.country}.svg`} alt={data.country} /> {data.position} {data.country}</td>
               <td>{data.matches_played}</td>
               <td>{data.won}</td>
               <td>{data.tied}</td>
