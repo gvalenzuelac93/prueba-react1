@@ -14,7 +14,7 @@ function Header({countries, setFilteredCountries}) {
             <Navbar.Brand href="#"
             ><img
             alt=""
-            src="src/assets/img/Conmebol.png"
+            src="./src/assets/img/Conmebol.png"
             width="30"
             height="30"
             className="d-inline-block align-top"
