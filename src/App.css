@@ -4,4 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
-
+body{
+  background: linear-gradient(to bottom, #88c4e6, #1d41e2);
+}
+footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}

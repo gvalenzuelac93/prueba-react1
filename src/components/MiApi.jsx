@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tabla from './Tabla';
 import Header from "./Header";
+import Footer from "./Footer";
 
 function MiApi() {
   const [countries, setCountries] = useState([]);
@@ -31,6 +32,7 @@ function MiApi() {
       <div id="contenido">
       <Tabla countries={filteredCountries} />
       </div>
+      <Footer />
       </div>
   );
 }
