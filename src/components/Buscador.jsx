@@ -16,6 +16,7 @@ function Buscador({ countries, setFilteredCountries }) {
     <div>
       <input
         type="text"
+        id="buscar"
         placeholder="Filtrar por País"
         className="form-control"
         value={search}
