@@ -1,8 +1,7 @@
-# React + Vite
+Prueba React 1 - Gonzalo Valenzuela
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deploy: https://prueba-react1-five.vercel.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Filtro de búsqueda se encuentra en el menú hamburguesa del costado derecho. 
+Los datos pueden ser ordenadas haciendo click en las cabeceras de las columnas.
+En esta ocasión ocupé la carpeta public para almacenar mis imágenes ya que Vercel no las leía y encontré una solución online donde indicaba esa modificación que finalmente me resultó.
